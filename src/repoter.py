@@ -21,3 +21,8 @@ class DataFrameReporter:
             print(df.describe(include='all'))
         else:
             print(df.describe(include=None))
+
+        # Добавление вывода пропусков во всём датасете
+        # в абсолютных и отсносительных значениях   
+        print('Количество пропусков:', df.isna().sum().sum())
+        print('Доля пропусков:', format(df.isna().mean(axis=None), self.float_format))
