@@ -14,3 +14,10 @@ class DataFrameReporter:
         print(f'Количество строк: {df.shape[0]}')
         print(f'Количество дубликатов: {df.duplicated().sum()}')
         print(f'Доля дубликатов: {format(df.duplicated().mean(), self.percent_format)}')
+
+        # Добавление вывода метода '.describe()',
+        # если пользователь передал в переменную экземпляра параметр "include_all = True"
+        if self.include_all:
+            print(df.describe(include='all'))
+        else:
+            print(df.describe(include=None))
