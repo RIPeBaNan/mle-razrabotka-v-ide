@@ -55,7 +55,9 @@ source main_venv/bin/activate
 
 ## Запуск
 Для выполнения отчета по данным запустите скрипт main.py из корневой директории проекта:
-```python main.py```
+```
+python main.py
+```
 
 ---
 
@@ -82,6 +84,6 @@ reporter.show_report(df, title='Отчет по транзакциям')
 ---
 
 ### Cтек технологий
-* Python 3.10+
+* Python 3.12
 * Pandas — обработка и агрегация табличных данных
 * Virtualenv / venv — изолированное окружение разработки
