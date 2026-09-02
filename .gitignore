@@ -1,0 +1,8 @@
+# OS folders
+.DS_store
+.DS_store/
+
+#Enviroments
+.main_venv
+main_venv
+main_venv/
